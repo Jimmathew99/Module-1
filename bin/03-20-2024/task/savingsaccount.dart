@@ -12,10 +12,18 @@ class SavingsAccount{
 
   calculateMonthlyInterest(){
     return(_savingsBalance!*annualInterestRate!/12);
-    _savingsBalance
+   
+  }
+  static modifyInterestRate(double newRate){
+    annualInterestRate=newRate;
+
+
 
   }
-  static modifyInterestRate(){
-
-  }
+}
+main(){
+  var saver1=SavingsAccount();
+  saver1._savingsBalance=2000;
+  saver1.calculateMonthlyInterest();
+  print(saver1._savingsBalance);
 }
