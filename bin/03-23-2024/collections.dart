@@ -1,6 +1,6 @@
 //List example
 main(){
-  var names=["Jack","Jim","Tommy"];
+  var names=["Jack","Jim","Tommy",];
   print(names);
   print(names[1]);
   print(names.length);

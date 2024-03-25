@@ -29,7 +29,7 @@ class Product{
       calculateprice(qu);
     }
     else{
-      print("product unavaiable");
+      print("product unavailable");
     }
 
   }
