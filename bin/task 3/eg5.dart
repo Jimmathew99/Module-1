@@ -1,21 +1,31 @@
-import 'dart:math';
-
-class Mount{
-  int?age;
-
-  Mount(this.age);
+class FirstException implements Exception{
+  String? error(){
+    print("First Exception");
 
   }
+}
+class SecondException implements Exception{
+  String? error(){
+    print("Second exception");
+  }
+}
+class Mount{
   g(){
-    try{
-      print(age!.sign);
-    }
-
+    throw FirstException();
   }
   f(){
-  return(g());
-
+    g();
+    try{
+      g();
     }
+    catch(e){
+      print(e);
+    }
+  }
+}
+
+
+
 
 
 
