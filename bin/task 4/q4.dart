@@ -4,6 +4,7 @@
 main(){
   var list=[0,5,10,12,13,14,15,16];
   print(list.elementAt(1));
-list.replaceRange(start, end, replacements)
+list.replaceRange(1, 3, [2,3,4]);
+print(list);
 
 }

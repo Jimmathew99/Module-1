@@ -2,5 +2,14 @@
 main(){
   var list1=["Jim","Jack","Jill","Paul"];
   var list2=[0,1,3,4,5,6,7,8,9];
-  bool areEqual=
+  comparison(){
+    
+  }
+  if(list1==list2){
+    print("Equal");
+  }
+  else{
+    print("Different");
+  }
+  print(object)
 }
